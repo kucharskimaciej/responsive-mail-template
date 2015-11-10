@@ -1,0 +1,32 @@
+/* -------------------------------------------
+		PHONE
+		For clients that support media queries.
+		Nothing fancy.
+-------------------------------------------- */
+@media only screen and (max-width: 720px) {
+  body[yahoo] a[class="button"] {
+    display: block !important;
+    margin-bottom: 10px !important;
+    background-image: none !important;
+    margin-right: 0 !important;
+  }
+  body[yahoo] div[class="column"],
+  body[yahoo] div[class="one-in-three"],
+  body[yahoo] div[class="two-in-three"] {
+    width: auto !important;
+    float: none !important;
+  }
+}
+@media only screen and (min-width: 721px) {
+  body[yahoo] .column, body[yahoo] .one-in-two {
+    width: 50% !important;
+  }
+
+  body[yahoo] .one-in-three {
+    width: 33.33% !important;
+  }
+
+  body[yahoo] .two-in-three {
+    width: 66.66% !important;
+  }
+}

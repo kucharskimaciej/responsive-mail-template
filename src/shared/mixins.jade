@@ -1,0 +1,11 @@
+mixin container(container_class)
+    table&attributes(attributes)
+        tr
+            td
+            td.container(class="#{container_class}")
+                .content
+                    table
+                        tr
+                            td
+                                block
+            td
